@@ -1,0 +1,376 @@
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { 
+  MapPin, 
+  Phone, 
+  Mail, 
+  Clock,
+  Send,
+  Building,
+  Users,
+  Globe,
+  CheckCircle
+} from "lucide-react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    message: ""
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission here
+    setIsSubmitted(true);
+    setTimeout(() => {
+      setIsSubmitted(false);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        service: "",
+        message: ""
+      });
+    }, 3000);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const contactInfo = [
+    {
+      icon: MapPin,
+      title: "Office Location",
+      details: ["Ahmedabad, Gujarat, India", "Serving clients across Gujarat"],
+      color: "text-primary"
+    },
+    {
+      icon: Phone,
+      title: "Phone Number",
+      details: ["+91 98765 43210", "Available 9 AM - 7 PM"],
+      color: "text-secondary"
+    },
+    {
+      icon: Mail,
+      title: "Email Address",
+      details: ["info@lemonsoftware.in", "support@lemonsoftware.in"],
+      color: "text-primary"
+    },
+    {
+      icon: Clock,
+      title: "Business Hours",
+      details: ["Monday - Saturday: 9:00 AM - 7:00 PM", "Sunday: By appointment"],
+      color: "text-secondary"
+    }
+  ];
+
+  const serviceOptions = [
+    "Custom ERP Development",
+    "ERP Module Implementation",
+    "Website Development",
+    "ERP Support & Maintenance",
+    "Business Consultation",
+    "Other"
+  ];
+
+  const quickStats = [
+    { icon: Building, label: "10+ Years", desc: "Experience" },
+    { icon: Users, label: "50+ Clients", desc: "Satisfied" },
+    { icon: Globe, label: "100%", desc: "Success Rate" },
+    { icon: CheckCircle, label: "24/7", desc: "Support" }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-hero text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Get In <span className="text-yellow-300">Touch</span>
+            </h1>
+            <p className="text-xl md:text-2xl opacity-90 mb-8">
+              Ready to transform your tile business with our ERP solutions? 
+              Let's discuss your requirements and provide a custom solution.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {quickStats.map((stat, index) => (
+                <div key={index} className="text-center animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <stat.icon className="w-8 h-8 mx-auto mb-2 text-yellow-300" />
+                  <div className="text-lg font-bold">{stat.label}</div>
+                  <div className="text-sm opacity-75">{stat.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form & Info */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Contact Form */}
+            <div className="animate-slide-in-right">
+              <Card className="shadow-large">
+                <CardContent className="p-8">
+                  <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+                  
+                  {isSubmitted ? (
+                    <div className="text-center py-8">
+                      <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
+                      <h3 className="text-xl font-semibold mb-2">Message Sent Successfully!</h3>
+                      <p className="text-muted-foreground">
+                        Thank you for contacting us. We'll get back to you within 24 hours.
+                      </p>
+                    </div>
+                  ) : (
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Full Name *</label>
+                          <Input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            placeholder="Enter your name"
+                            required
+                            className="transition-all focus:ring-2 focus:ring-primary"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Phone Number *</label>
+                          <Input
+                            type="tel"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
+                            placeholder="+91 98765 43210"
+                            required
+                            className="transition-all focus:ring-2 focus:ring-primary"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Email Address *</label>
+                          <Input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            placeholder="your@email.com"
+                            required
+                            className="transition-all focus:ring-2 focus:ring-primary"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-sm font-medium mb-2">Company Name</label>
+                          <Input
+                            type="text"
+                            name="company"
+                            value={formData.company}
+                            onChange={handleInputChange}
+                            placeholder="Your tile company"
+                            className="transition-all focus:ring-2 focus:ring-primary"
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-medium mb-2">Service Required *</label>
+                        <select
+                          name="service"
+                          value={formData.service}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                        >
+                          <option value="">Select a service</option>
+                          {serviceOptions.map((option, index) => (
+                            <option key={index} value={option}>{option}</option>
+                          ))}
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-medium mb-2">Message *</label>
+                        <Textarea
+                          name="message"
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          placeholder="Tell us about your requirements..."
+                          rows={4}
+                          required
+                          className="transition-all focus:ring-2 focus:ring-primary"
+                        />
+                      </div>
+
+                      <Button type="submit" variant="gradient" size="lg" className="w-full">
+                        <Send className="w-4 h-4 mr-2" />
+                        Send Message
+                      </Button>
+                    </form>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Contact Information */}
+            <div className="animate-slide-in-right">
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    Get in touch with our team for ERP solutions, website development, 
+                    or any business consultation. We're here to help your tile business grow.
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  {contactInfo.map((info, index) => (
+                    <Card key={index} className="shadow-medium hover:shadow-large transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                      <CardContent className="p-6">
+                        <div className="flex items-start space-x-4">
+                          <div className={`w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0`}>
+                            <info.icon className="w-6 h-6 text-white" />
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold mb-2">{info.title}</h3>
+                            {info.details.map((detail, idx) => (
+                              <p key={idx} className="text-muted-foreground">{detail}</p>
+                            ))}
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                {/* Quick Contact */}
+                <Card className="shadow-large bg-gradient-primary text-white">
+                  <CardContent className="p-6 text-center">
+                    <Phone className="w-12 h-12 mx-auto mb-4" />
+                    <h3 className="text-xl font-bold mb-2">Need Immediate Help?</h3>
+                    <p className="mb-4 opacity-90">Call us directly for urgent requirements</p>
+                    <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-gray-900">
+                      <Phone className="w-4 h-4 mr-2" />
+                      +91 98765 43210
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Service Areas */}
+      <section className="py-20 bg-gradient-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Our Service Areas
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Based in Ahmedabad, we serve tile and ceramic manufacturers across Gujarat, 
+              with special focus on the Morbi industrial region.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="shadow-medium text-center">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Ahmedabad</h3>
+                <p className="text-muted-foreground">Our headquarters and main development center</p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium text-center">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Morbi</h3>
+                <p className="text-muted-foreground">Major client base in the ceramic capital of India</p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium text-center">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">All Gujarat</h3>
+                <p className="text-muted-foreground">Serving manufacturing businesses across the state</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Quick answers to common questions about our services
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "How long does ERP implementation take?",
+                a: "Typically 2-4 weeks depending on the modules and customization required. We ensure minimal business disruption."
+              },
+              {
+                q: "Do you provide training for the ERP system?",
+                a: "Yes, we provide comprehensive training for your team and ongoing support to ensure smooth operations."
+              },
+              {
+                q: "Can you integrate with existing systems?",
+                a: "Yes, our ERP can integrate with your existing systems and databases for seamless data migration."
+              },
+              {
+                q: "What are the costs for ERP development?",
+                a: "Costs vary based on modules and customization. Contact us for a detailed quote based on your requirements."
+              }
+            ].map((faq, index) => (
+              <Card key={index} className="shadow-medium">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3">{faq.q}</h3>
+                  <p className="text-muted-foreground">{faq.a}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
