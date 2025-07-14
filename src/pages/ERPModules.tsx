@@ -273,7 +273,7 @@ const ERPModules = () => {
                       </Button>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      Call us directly: <strong>+91 98765 43210</strong>
+                      Call us directly: <strong>+919723822139</strong>
                     </p>
                   </div>
                 </CardContent>

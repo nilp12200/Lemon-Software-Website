@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      details: ["+91 98765 43210", "Available 9 AM - 7 PM"],
+      details: ["+919723822139", "Available 9 AM - 7 PM"],
       color: "text-secondary"
     },
     {
@@ -160,7 +160,7 @@ const Contact = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+91 98765 43210"
+                            placeholder="+919723822139"
                             required
                             className="transition-all focus:ring-2 focus:ring-primary"
                           />
@@ -271,7 +271,7 @@ const Contact = () => {
                     <p className="mb-4 opacity-90">Call us directly for urgent requirements</p>
                     <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-gray-900">
                       <Phone className="w-4 h-4 mr-2" />
-                      +91 98765 43210
+                      +919723822139
                     </Button>
                   </CardContent>
                 </Card>
