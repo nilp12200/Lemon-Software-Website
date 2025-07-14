@@ -31,6 +31,7 @@ const ChatWidget = () => {
     clients: "We serve major ceramic factories in Morbi, including Crystal Tiles.",
     modules: "Our ERP includes Inventory, Sales, Purchase, Production, Quality Control, and more modules.",
     deployment: "We offer fast deployment with secure and trusted systems.",
+    kon:"hu vagesh bhai.";
   };
 
   const getResponse = (input: string): string => {
@@ -58,6 +59,10 @@ const ChatWidget = () => {
       return quickResponses.modules;
     }
     if (query.includes("deployment") || query.includes("fast") || query.includes("secure")) {
+      return quickResponses.deployment;
+    }
+     
+    if (query.includes("kon") || query.includes("fast") || query.includes("secure")) {
       return quickResponses.deployment;
     }
     
