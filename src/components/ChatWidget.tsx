@@ -62,10 +62,9 @@ const ChatWidget = () => {
       return quickResponses.deployment;
     }
      
-    if (query.includes("kon") || query.includes("who") || query.includes("hi")) {
-      return quickResponses.deployment;
-    }
-    
+  if (query.includes("kon")) {
+    return quickResponses.kon;
+  }
     return "Thank you for your question! For detailed information, please call us at +91 9723822139 or visit our Contact page.";
   };
 
