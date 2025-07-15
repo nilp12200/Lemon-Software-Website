@@ -32,6 +32,7 @@ const ChatWidget = () => {
     modules: "Our ERP includes Inventory, Sales, Purchase, Production, Quality Control, and more modules.",
     deployment: "We offer fast deployment with secure and trusted systems.",
     kon:" hi hu vagesh bhai from amd."
+    dhruv :"Hu dhulo Ranip do don form S.k Ha maru saberkandha ha moj moj ."
   };
 
   const getResponse = (input: string): string => {
@@ -64,6 +65,10 @@ const ChatWidget = () => {
      
   if (query.includes("kon")) {
     return quickResponses.kon;
+  }
+
+  if (query.includes("dhruv")) {
+    return quickResponses.dhruv;
   }
     return "Thank you for your question! For detailed information, please call us at +91 9723822139 or visit our Contact page.";
   };
