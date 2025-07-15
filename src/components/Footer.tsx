@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 flex items-center justify-center">
+              <div className="w-14 h-14 flex items-center justify-center bg-white rounded-lg p-2">
                 <img 
                   src="/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png" 
                   alt="Lemon Software Logo" 
@@ -17,7 +17,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Lemon Software</h3>
+                <h3 className="text-xl font-bold text-white">Lemon Software</h3>
                 <p className="text-sm text-gray-400">ERP Solutions</p>
               </div>
             </div>
