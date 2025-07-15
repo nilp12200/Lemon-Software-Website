@@ -29,12 +29,6 @@ const WebDevelopment = () => {
       features: ["Mobile optimization", "Cross-device compatibility", "Touch-friendly interface", "Fast loading"]
     },
     {
-      icon: Search,
-      title: "SEO Optimization",
-      description: "Search engine optimized websites to help customers find your tile business online.",
-      features: ["Google ranking", "Local SEO", "Keyword optimization", "Analytics setup"]
-    },
-    {
       icon: Palette,
       title: "Custom Design",
       description: "Unique designs tailored to your brand and the tile industry aesthetic.",
@@ -88,46 +82,6 @@ const WebDevelopment = () => {
     "Regular Backups & Updates"
   ];
 
-  const packages = [
-    {
-      name: "Basic Website",
-      price: "₹25,000",
-      description: "Perfect for small tile businesses",
-      features: [
-        "5-page website",
-        "Mobile responsive",
-        "Contact forms",
-        "Basic SEO",
-        "1 year support"
-      ]
-    },
-    {
-      name: "Business Website",
-      price: "₹50,000",
-      description: "Ideal for established manufacturers",
-      features: [
-        "10-page website",
-        "Product catalog",
-        "Advanced SEO",
-        "CMS access",
-        "Analytics setup",
-        "2 years support"
-      ]
-    },
-    {
-      name: "E-commerce Solution",
-      price: "₹1,50,000",
-      description: "Complete online business platform",
-      features: [
-        "Full e-commerce site",
-        "ERP integration",
-        "Online payments",
-        "Inventory sync",
-        "Custom features",
-        "3 years support"
-      ]
-    }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -225,7 +179,7 @@ const WebDevelopment = () => {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-gradient-card">
+      <section className="py-20 bg-gradient-to-br from-yellow-300/20 via-green-300/20 to-emerald-400/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -297,47 +251,6 @@ const WebDevelopment = () => {
         </div>
       </section>
 
-      {/* Pricing Packages */}
-      <section className="py-20 bg-gradient-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Website Development Packages
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Choose the perfect package for your tile business needs and budget.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg, index) => (
-              <Card key={index} className={`shadow-medium hover:shadow-large transition-all duration-300 ${index === 1 ? 'border-2 border-primary scale-105' : ''} animate-scale-in`} style={{ animationDelay: `${index * 0.2}s` }}>
-                <CardContent className="p-8 text-center">
-                  {index === 1 && (
-                    <div className="bg-primary text-white text-sm font-medium px-3 py-1 rounded-full inline-block mb-4">
-                      Most Popular
-                    </div>
-                  )}
-                  <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                  <div className="text-3xl font-bold text-primary mb-2">{pkg.price}</div>
-                  <p className="text-muted-foreground mb-6">{pkg.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {pkg.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm">
-                        <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button variant={index === 1 ? "gradient" : "outline"} size="lg" className="w-full" asChild>
-                    <Link to="/contact">Get Started</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-hero text-white">
