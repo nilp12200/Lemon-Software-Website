@@ -31,7 +31,7 @@ const ChatWidget = () => {
     clients: "We serve major ceramic factories in Morbi, including Crystal Tiles.",
     modules: "Our ERP includes Inventory, Sales, Purchase, Production, Quality Control, and more modules.",
     deployment: "We offer fast deployment with secure and trusted systems.",
-    kon:" hi hu vagesh bhai from amd."
+    kon:" hi hu vagesh bhai from amd.",
     dhruv :"Hu dhulo Ranip do don form S.k Ha maru saberkandha ha moj moj ."
   };
 
