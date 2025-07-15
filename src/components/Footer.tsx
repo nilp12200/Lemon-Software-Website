@@ -9,11 +9,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 flex items-center justify-center">
+              <div className="w-10 h-10 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png" 
                   alt="Lemon Software Logo" 
-                  className="w-12 h-12 object-contain"
+                  className="w-10 h-10 object-contain"
                 />
               </div>
               <div>
