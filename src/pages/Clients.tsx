@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Clients = () => {
   const testimonials = [
     {
-      company: "Crystal Tiles",
-      logo: "CT",
+      company: "Crystal Ceramic Industries Ltd",
+      logo: "CC",
       location: "Morbi, Gujarat",
       rating: 5,
       testimonial: "Lemon Software's ERP solution completely transformed our production planning and inventory management. We've seen 30% improvement in efficiency since implementation.",
@@ -16,8 +16,8 @@ const Clients = () => {
       modules: ["Inventory", "Production", "Quality Control", "Sales"]
     },
     {
-      company: "Morbi Ceramics Ltd",
-      logo: "MC",
+      company: "AMAZOONE CERAMICS LIMITED",
+      logo: "AC",
       location: "Morbi, Gujarat", 
       rating: 5,
       testimonial: "The custom ERP modules perfectly fit our business needs. The support team is excellent and always available when needed. Highly recommended!",
@@ -26,8 +26,8 @@ const Clients = () => {
       modules: ["Complete ERP Suite", "Financial Management", "HR"]
     },
     {
-      company: "Tile Master Industries",
-      logo: "TM",
+      company: "BLUEZONE VITRIFIED PVT LTD",
+      logo: "BV",
       location: "Morbi, Gujarat",
       rating: 5,
       testimonial: "Fast deployment and minimal business disruption. The system was up and running within 2 weeks. ROI was visible within 3 months.",
@@ -38,21 +38,23 @@ const Clients = () => {
   ];
 
   const clientStats = [
-    { number: "50+", label: "Happy Clients", description: "Satisfied customers across Gujarat" },
+    { number: "10+", label: "Happy Clients", description: "Satisfied customers across Gujarat" },
     { number: "100%", label: "Success Rate", description: "Every project delivered successfully" },
     { number: "2 weeks", label: "Avg Deployment", description: "Quick implementation" },
     { number: "30%", label: "Efficiency Gain", description: "Average improvement reported" }
   ];
 
   const clientLogos = [
-    { name: "Crystal Tiles", logo: "CT", size: "large" },
-    { name: "Morbi Ceramics", logo: "MC", size: "medium" },
-    { name: "Tile Master", logo: "TM", size: "medium" },
-    { name: "Ceramic Pro", logo: "CP", size: "small" },
-    { name: "Gujarat Tiles", logo: "GT", size: "small" },
-    { name: "Royal Ceramics", logo: "RC", size: "medium" },
-    { name: "Star Tiles", logo: "ST", size: "small" },
-    { name: "Premium Ceramics", logo: "PC", size: "medium" }
+    { name: "Adicon Ceramica Tiles Private Limited", logo: "AC", size: "large" },
+    { name: "Crystal Ceramic Industries Ltd", logo: "CC", size: "medium" },
+    { name: "AMAZOONE CERAMICS LIMITED", logo: "AZ", size: "medium" },
+    { name: "ARA TILES PRIVATE LIMITED", logo: "AT", size: "small" },
+    { name: "ORINDA INDUSTRIES LLP", logo: "OI", size: "small" },
+    { name: "BLUEZONE VITRIFIED PVT LTD", logo: "BV", size: "medium" },
+    { name: "future ceramic pvt ltd", logo: "FC", size: "small" },
+    { name: "agl sanitaryware pvt ltd", logo: "AG", size: "medium" },
+    { name: "SEGA GRANITO LLP", logo: "SG", size: "small" },
+    { name: "REY CERA EXIM", logo: "RC", size: "medium" }
   ];
 
   const benefits = [
@@ -79,7 +81,7 @@ const Clients = () => {
             <div className="flex items-center justify-center space-x-6 text-lg">
               <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-yellow-300" />
-                <span>50+ Happy Clients</span>
+                <span>10+ Happy Clients</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Building className="w-5 h-5 text-yellow-300" />
@@ -105,7 +107,7 @@ const Clients = () => {
         </div>
       </section>
 
-      {/* Client Testimonials */}
+      {/* What Our Clients Say */}
       <section className="py-20 bg-gradient-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -172,7 +174,7 @@ const Clients = () => {
         </div>
       </section>
 
-      {/* Client Logos */}
+      {/* Trusted by Industry Leaders */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

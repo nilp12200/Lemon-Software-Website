@@ -9,11 +9,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-14 h-14 flex items-center justify-center bg-white rounded-lg p-2">
+              <div className="w-14 h-14 flex items-center justify-center rounded-lg p-2">
                 <img 
-                  src="/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png" 
+                  src="/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png" 
                   alt="Lemon Software Logo" 
                   className="w-10 h-10 object-contain"
+                  style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.8))' }}
                 />
               </div>
               <div>
@@ -59,11 +60,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+919723822139</span>
+                <span className="text-gray-300 text-sm">+91 9998815125</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-gray-300 text-sm">info@lemonsoftware.in</span>
+                <span className="text-gray-300 text-sm">lemonsoftinfo@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Calendar className="w-4 h-4 text-primary flex-shrink-0" />

@@ -26,9 +26,10 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png" 
+                src="/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png" 
                 alt="Lemon Software Logo" 
                 className="w-12 h-12 object-contain"
+                style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.8))' }}
               />
             </div>
             <div>
@@ -54,7 +55,7 @@ const Header = () => {
             ))}
             <Button variant="gradient" size="sm" className="ml-4">
               <Phone className="w-4 h-4 mr-2" />
-              +91 9723822139
+              +91 9998815125
             </Button>
           </div>
 
@@ -89,7 +90,7 @@ const Header = () => {
               <div className="px-3 py-2">
                 <Button variant="gradient" size="sm" className="w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  +91 9723822139
+                  +91 9998815125
                 </Button>
               </div>
             </div>

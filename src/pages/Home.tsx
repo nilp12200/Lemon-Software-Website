@@ -39,7 +39,7 @@ const Home = () => {
 
   const stats = [
     { number: "10+", label: "Years Experience" },
-    { number: "50+", label: "Happy Clients" },
+    { number: "10+", label: "Happy Clients" },
     { number: "100+", label: "ERP Modules" },
     { number: "24/7", label: "Support" }
   ];
@@ -133,9 +133,9 @@ const Home = () => {
             <Card className="shadow-medium">
               <CardContent className="p-6 text-center">
                 <div className="w-20 h-20 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-2xl">CT</span>
+                  <span className="text-white font-bold text-2xl">CC</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Crystal Tiles</h3>
+                <h3 className="text-xl font-semibold mb-2">Crystal Ceramic Industries</h3>
                 <p className="text-muted-foreground">Leading ceramic manufacturer using our complete ERP solution</p>
               </CardContent>
             </Card>
@@ -143,7 +143,7 @@ const Home = () => {
             <Card className="shadow-medium">
               <CardContent className="p-6 text-center">
                 <div className="w-20 h-20 bg-gradient-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-2xl">50+</span>
+                  <span className="text-white font-bold text-2xl">10+</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Morbi Factories</h3>
                 <p className="text-muted-foreground">Tile and ceramic factories actively using our ERP systems</p>
@@ -170,7 +170,7 @@ const Home = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join the leading tile manufacturers who trust Lemon Software for their ERP needs.
+            Join Crystal Ceramic Industries and other leading tile manufacturers who trust Lemon Software for their ERP needs.
             Get a free consultation and see how we can help your business grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
