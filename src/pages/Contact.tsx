@@ -15,6 +15,9 @@ import {
   CheckCircle
 } from "lucide-react";
 
+// ... existing code ...
+const API_URL = import.meta.env.VITE_API_URL || "https://lemon-software-website.onrender.com";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -30,7 +33,7 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://lemon-software-website.onrender.com", {
+      const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -55,6 +58,7 @@ const Contact = () => {
       alert("Failed to send message. Please try again.");
     }
   };
+// ... existing code ...
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
