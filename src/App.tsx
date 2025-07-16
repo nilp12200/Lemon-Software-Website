@@ -9,6 +9,7 @@ import ChatWidget from "./components/ChatWidget";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ERPModules from "./pages/ERPModules";
+import CRM from "./pages/CRM";
 import Clients from "./pages/Clients";
 import WebDevelopment from "./pages/WebDevelopment";
 import Contact from "./pages/Contact";
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/erp-modules" element={<ERPModules />} />
+              <Route path="/crm" element={<CRM />} />
               <Route path="/clients" element={<Clients />} />
               <Route path="/web-development" element={<WebDevelopment />} />
               <Route path="/contact" element={<Contact />} />

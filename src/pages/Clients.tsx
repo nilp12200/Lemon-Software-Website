@@ -45,16 +45,16 @@ const Clients = () => {
   ];
 
   const clientLogos = [
-    { name: "Adicon Ceramica Tiles Private Limited", logo: "AC", size: "large" },
-    { name: "Crystal Ceramic Industries Ltd", logo: "CC", size: "medium" },
-    { name: "AMAZOONE CERAMICS LIMITED", logo: "AZ", size: "medium" },
-    { name: "ARA TILES PRIVATE LIMITED", logo: "AT", size: "small" },
-    { name: "ORINDA INDUSTRIES LLP", logo: "OI", size: "small" },
-    { name: "BLUEZONE VITRIFIED PVT LTD", logo: "BV", size: "medium" },
-    { name: "future ceramic pvt ltd", logo: "FC", size: "small" },
-    { name: "agl sanitaryware pvt ltd", logo: "AG", size: "medium" },
-    { name: "SEGA GRANITO LLP", logo: "SG", size: "small" },
-    { name: "REY CERA EXIM", logo: "RC", size: "medium" }
+    { name: "Adicon Ceramica Tiles Private Limited", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
+    { name: "Crystal Ceramic Industries Ltd", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
+    { name: "AMAZOONE CERAMICS LIMITED", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
+    { name: "ARA TILES PRIVATE LIMITED", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
+    { name: "ORINDA INDUSTRIES LLP", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
+    { name: "BLUEZONE VITRIFIED PVT LTD", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
+    { name: "future ceramic pvt ltd", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
+    { name: "agl sanitaryware pvt ltd", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
+    { name: "SEGA GRANITO LLP", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
+    { name: "REY CERA EXIM", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" }
   ];
 
   const benefits = [
@@ -186,17 +186,17 @@ const Clients = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {clientLogos.map((client, index) => (
-              <div key={index} className="text-center animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className={`
-                  bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-2 text-white font-bold
-                  ${client.size === 'large' ? 'w-16 h-16 text-xl' : 
-                    client.size === 'medium' ? 'w-12 h-12 text-lg' : 'w-10 h-10 text-sm'}
-                `}>
-                  {client.logo}
+              <div key={index} className="text-center animate-scale-in group" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="bg-white rounded-lg shadow-soft p-4 group-hover:shadow-medium transition-shadow duration-300 mb-3">
+                  <img 
+                    src={client.logo} 
+                    alt={`${client.name} logo`}
+                    className={`${client.size} w-auto mx-auto object-contain`}
+                  />
                 </div>
-                <p className="text-xs text-muted-foreground">{client.name}</p>
+                <p className="text-xs text-muted-foreground font-medium">{client.name}</p>
               </div>
             ))}
           </div>

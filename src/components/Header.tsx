@@ -11,6 +11,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "ERP Modules", href: "/erp-modules" },
+    { name: "CRM", href: "/crm" },
     { name: "Client Stories", href: "/clients" },
     { name: "Website Development", href: "/web-development" },
     { name: "Contact", href: "/contact" },
