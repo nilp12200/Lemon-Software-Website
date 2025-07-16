@@ -7,17 +7,17 @@ const Clients = () => {
   const testimonials = [
     {
       company: "Crystal Ceramic Industries Ltd",
-      logo: "CC",
+      logo: "CCI",
       location: "Morbi, Gujarat",
       rating: 5,
-      testimonial: "Lemon Software's ERP solution completely transformed our production planning and inventory management. We've seen 30% improvement in efficiency since implementation.",
-      contact: "Rajesh Patel",
+      testimonial: "LEMON SOFTWARE SOLUTION's ERP solution completely transformed our production planning and inventory management. We've seen 30% improvement in efficiency since implementation.",
+      contact: "J.R.Patel",
       designation: "Production Manager",
       modules: ["Inventory", "Production", "Quality Control", "Sales"]
     },
     {
-      company: "AMAZOONE CERAMICS LIMITED",
-      logo: "AC",
+      company: "Adicon Ceramica Tiles Private Limited",
+      logo: "ACTPL",
       location: "Morbi, Gujarat",
       rating: 5,
       testimonial: "The custom ERP modules perfectly fit our business needs. The support team is excellent and always available when needed. Highly recommended!",
@@ -26,9 +26,9 @@ const Clients = () => {
       modules: ["Complete ERP Suite", "Financial Management", "HR"]
     },
     {
-      company: "BLUEZONE VITRIFIED PVT LTD",
-      logo: "BV",
-      location: "Morbi, Gujarat",
+      company: "Ara Tiles Private Limited",
+      logo: "ATL",
+      location: "Jaipur, Rajasthan",
       rating: 5,
       testimonial: "Fast deployment and minimal business disruption. The system was up and running within 2 weeks. ROI was visible within 3 months.",
       contact: "Amit Kumar",
@@ -38,23 +38,23 @@ const Clients = () => {
   ];
 
   const clientStats = [
-    { number: "10+", label: "Happy Clients", description: "Satisfied customers across Gujarat" },
+    { number: "50+", label: "Happy Clients", description: "Satisfied customers across Gujarat" },
     { number: "100%", label: "Success Rate", description: "Every project delivered successfully" },
     { number: "2 weeks", label: "Avg Deployment", description: "Quick implementation" },
     { number: "30%", label: "Efficiency Gain", description: "Average improvement reported" }
   ];
 
   const clientLogos = [
-    { name: "Adicon Ceramica Tiles Private Limited", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
-    { name: "Crystal Ceramic Industries Ltd", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
-    { name: "AMAZOONE CERAMICS LIMITED", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
-    { name: "ARA TILES PRIVATE LIMITED", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
-    { name: "ORINDA INDUSTRIES LLP", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
-    { name: "BLUEZONE VITRIFIED PVT LTD", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
-    { name: "future ceramic pvt ltd", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" },
-    { name: "agl sanitaryware pvt ltd", logo: "/lovable-uploads/48755310-2355-46f6-b14d-ef8b704884d0.png", size: "h-16" },
-    { name: "SEGA GRANITO LLP", logo: "/lovable-uploads/6b9a2d3b-c375-443d-890b-e8bbad34c31a.png", size: "h-14" },
-    { name: "REY CERA EXIM", logo: "/lovable-uploads/051503af-cba1-45fd-bd86-ed0bf15f35e8.png", size: "h-12" }
+    { name: "Crystal Ceramic Industries Ltd", size: "medium", image: "/lovable-uploads/crystal.png" },
+    { name: "Adicon Ceramica Tiles Private Limited", size: "medium", image: "/lovable-uploads/adicon.png" },
+    { name: "Amazoone Ceramics Limited", size: "medium", image: "/lovable-uploads/Amazoone Ceramics Limited.png" },
+    { name: "Bluezone Vitrified Pvt Ltd", size: "medium", image: "/lovable-uploads/Bluezone Vitrified Pvt Ltd.png" },
+    { name: "Orinda Industries LLP", size: "medium", image: "/lovable-uploads/Orinda Industries LLP.png" },
+    { name: "Ara Tiles Private Limited", size: "medium", image: "/lovable-uploads/ARA.png" }, // Replace with actual image if available
+    { name: "Future Ceramic Pvt Ltd", size: "medium", image: "/lovable-uploads/future.png" },
+    { name: "AGL Sanitaryware Pvt Ltd", size: "medium", image: "/lovable-uploads/AGL Sanitaryware Pvt Ltd.png" }, // Replace with actual image if available
+    { name: "Sega Granito LLP", size: "medium", image: "/lovable-uploads/Sega Granito LLP.png" },
+    { name: "Rey Cera Exim", size: "medium", image: "/lovable-uploads/Rey Cera Exim.png" },
   ];
 
   const benefits = [
@@ -81,7 +81,7 @@ const Clients = () => {
             <div className="flex items-center justify-center space-x-6 text-lg">
               <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-yellow-300" />
-                <span>10+ Happy Clients</span>
+                <span>50+ Happy Clients</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Building className="w-5 h-5 text-yellow-300" />
@@ -107,7 +107,42 @@ const Clients = () => {
         </div>
       </section>
       
-      {/* What Our Clients Say */}
+      {/* Client Logos */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Trusted by Industry Leaders
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Major tile and ceramic manufacturers across Gujarat trust our solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            {clientLogos.map((client, index) => (
+              <div key={index} className="text-center animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="w-24 h-24 flex items-center justify-center mx-auto mb-2 rounded-lg shadow border bg-white">
+                  {client.image ? (
+                    <img
+                      src={client.image}
+                      alt={client.name}
+                      className="w-full h-full object-contain p-2"
+                      onError={e => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.textContent = client.name[0]; }}
+                    />
+                  ) : (
+                    <span className="text-3xl font-bold text-gray-500">{client.name[0]}</span>
+                  )}
+                </div>
+                <p className="text-xs text-muted-foreground">{client.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* Client Testimonials */}
       <section className="py-20 bg-gradient-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -169,35 +204,6 @@ const Clients = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trusted by Industry Leaders */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Trusted by Industry Leaders
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Major tile and ceramic manufacturers across Gujarat trust our solutions
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-            {clientLogos.map((client, index) => (
-              <div key={index} className="text-center animate-scale-in group" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="bg-white rounded-lg shadow-soft p-4 group-hover:shadow-medium transition-shadow duration-300 mb-3">
-                  <img 
-                    src={client.logo} 
-                    alt={`${client.name} logo`}
-                    className={`${client.size} w-auto mx-auto object-contain`}
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground font-medium">{client.name}</p>
-              </div>
             ))}
           </div>
         </div>
