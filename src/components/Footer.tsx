@@ -18,7 +18,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Lemon Software</h3>
+                <h3 className="text-xl font-bold text-white">Lemon Software Solution</h3>
                 <p className="text-sm text-gray-400">ERP Solutions</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Lemon Software. All rights reserved. Trusted by major tile manufacturers in Morbi.
+            © 2024 Lemon Software Solution. All rights reserved. Trusted by major tile manufacturers in Morbi.
           </p>
         </div>
       </div>

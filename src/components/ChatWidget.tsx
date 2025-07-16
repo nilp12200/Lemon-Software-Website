@@ -15,7 +15,7 @@ const ChatWidget = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hi! I'm Lemon Software's assistant. Ask me about our ERP solutions, location, contact details, or services!",
+      text: "Hi! I'm Lemon Software Solution's assistant. Ask me about our ERP solutions, location, contact details, or services!",
       isBot: true,
       timestamp: new Date(),
     },
@@ -23,7 +23,7 @@ const ChatWidget = () => {
   const [inputValue, setInputValue] = useState("");
 
   const quickResponses = {
-    location: "Lemon Software is based in Ahmedabad, Gujarat.",
+    location: "Lemon Software Solution is based in Ahmedabad, Gujarat.",
     contact: "You can reach us at +91 9723822139.",
     website: "Yes, we build custom websites for our clients along with ERP solutions.",
     erp: "Yes, we specialize in ERP solutions for tile factories and other manufacturing businesses.",

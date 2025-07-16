@@ -34,7 +34,7 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Lemon Software</h1>
+              <h1 className="text-xl font-bold text-foreground">Lemon Software Solution</h1>
               <p className="text-xs text-muted-foreground">ERP Solutions</p>
             </div>
           </Link>

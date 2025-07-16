@@ -10,7 +10,7 @@ const Clients = () => {
       logo: "CCI",
       location: "Morbi, Gujarat",
       rating: 5,
-      testimonial: "LEMON SOFTWARE SOLUTION's ERP solution completely transformed our production planning and inventory management. We've seen 30% improvement in efficiency since implementation.",
+      testimonial: "Lemon Software Solution's ERP solution completely transformed our production planning and inventory management. We've seen 30% improvement in efficiency since implementation.",
       contact: "J.R.Patel",
       designation: "Production Manager",
       modules: ["Inventory", "Production", "Quality Control", "Sales"]
