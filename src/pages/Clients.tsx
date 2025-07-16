@@ -18,7 +18,7 @@ const Clients = () => {
     {
       company: "AMAZOONE CERAMICS LIMITED",
       logo: "AC",
-      location: "Morbi, Gujarat", 
+      location: "Morbi, Gujarat",
       rating: 5,
       testimonial: "The custom ERP modules perfectly fit our business needs. The support team is excellent and always available when needed. Highly recommended!",
       contact: "Priya Shah",
@@ -106,7 +106,7 @@ const Clients = () => {
           </div>
         </div>
       </section>
-
+      
       {/* What Our Clients Say */}
       <section className="py-20 bg-gradient-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
