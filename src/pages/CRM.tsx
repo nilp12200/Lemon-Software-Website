@@ -456,7 +456,7 @@ const CRM = () => {
           
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
             <img 
-              src="WhatsApp Image 2025-07-16 at 5.04.13 PM.jpeg" 
+              src="/crm/task.jpeg"
               alt="App Navigation Menu" 
               className="w-full h-auto rounded-lg border border-gray-200"
             />
