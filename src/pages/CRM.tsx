@@ -317,22 +317,22 @@ const CRM = () => {
     {
       title: "Comprehensive Dashboard",
       description: "Real-time overview of your business metrics and performance indicators.",
-      image: "WhatsApp Image 2025-07-16 at 4.24.38 PM.jpeg"
+      image: "/crm/Dashbord.jpeg"
     },
     {
       title: "Expense Management",
       description: "Track and categorize all business expenses with detailed reporting.",
-      image: "WhatsApp Image 2025-07-16 at 4.24.39 PM.jpeg"
+      image: "/crm/Expence.jpeg"
     },
     {
       title: "Task & Activity Tracking",
       description: "Manage daily tasks, visits, and customer interactions efficiently.",
-      image: "WhatsApp Image 2025-07-16 at 4.24.38 PM (2).jpeg"
+      image: "/crm/Task.jpeg"
     },
     {
       title: "Inventory Management",
       description: "Live stock reports with detailed product information and tracking.",
-      image: "WhatsApp Image 2025-07-16 at 4.24.38 PM (1).jpeg"
+      image: "/crm/Stock.jpeg"
     }
   ];
 
